@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo"> <span>Laureats Modern Bilingual College</span></a>
+        <div class="nav-links">
+            <a href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="./course.html">Course</a>
+            <a href="./registration.html">Registration</a>
+            <a href="./contact.html">CONTACT US</a>
+        </div>
+    </nav>
+           <!-- Registration Section -->
+    <section id="inscription">
+        <div class="section-title">
+            <h2>Online Registration</h2>
+            <p>Register your child easily from home.</p>
+        </div>
+        <div class="registration-container">
+            <form id="registrationForm" method="post" action="register.php">
+                <!-- Student Information -->
+                <div class="form-section">
+                    <h3>👤 Student Information</h3>
+                    <div class="form-row">
+                           <div class="form-group">
+                            <label for="studentFirstName">First name *</label>
+                            <input type="text" id="studentFirstName" name="fname" placeholder="first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentLastName">Surname *</label>
+                            <input type="text" id="studentLastName" name="lname" placeholder="Surname" required>
+                        </div>
+                     
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="birthDate">Date of birth *</label>
+                            <input type="date" name="birthDate" id="birthDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Sex *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="classLevel">Level requested *</label>
+                        <select id="classLevel" name="classLevel" required>
+                            <option value="">Select level</option>
+                            <optgroup label="anglophone">
+                                <option value="Form 1">Form 1</option>
+                                <option value="Form 2">Form 2</option>
+                                <option value="Form 3">form 3</option>
+                                <option value="Form 4">form 4</option>
+                                <option value="Form 5">Form 5</option>
+                                <option value="Lowersixth">Lowersixth</option>
+                                <option value="Uppersixth">Uppersixth</option>
+                             </optgroup>
+                             <optgroup label="Francophone">
+                                <option value="Sixieme">Sixieme</option>
+                                <option value="cinqieme">cinqieme </option>
+                                <option value="Quatrieme">Quatrieme</option>
+                                <option value="Troisieme">Troisieme</option>
+                                <option value="Seconde">Seconde</option>
+                                <option value="Première">Première</option>
+                                <option value="Terminale">Terminale</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Parent Information -->
+                <!-- <div class="form-section">
+                    <h3>👨‍👩‍👧 Parent/Guardian Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parentLastName">Parent's name *</label>
+                            <input type="text" id="parentLastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentFirstName">Parent's first name *</label>
+                            <input type="text" id="parentFirstName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telephone *</label>
+                            <input type="tel" id="phone" required placeholder="Ex: 06 12 34 56 78">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required placeholder="exemple@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Full address *</label>
+                        <textarea id="address" rows="2" required placeholder=" Quartier, Ville"></textarea>
+                    </div>
+                </div> -->
+
+                <!-- Additional Information -->
+                <div class="form-section">
+                    <h3>📝 Additional Information</h3>
+                    <div class="form-group">
+                        <label for="previousSchool">Previous school (if applicable)</label>
+                        <input type="text" id="previousSchool" name="prevschool" placeholder="Nom de l'ancienne école">
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notes or special requirements</label>
+                        <textarea id="notes" name="description" rows="3" placeholder="Allergies, besoins spéciaux, etc."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" name="submit" class="btn submit-btn">📨 Submit Registration</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                Registration successfully completed! We will contact you soon to confirm your registration.
+            </div>
+        </div>
+</body>
+</html>
